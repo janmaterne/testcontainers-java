@@ -20,3 +20,14 @@ should be included in your classpath to show a reasonable level of log output:
     <logger name="com.github.dockerjava" level="WARN"/>
 </configuration>
 ```
+
+*Your project should include an SLF4J implementation* means that it must have a dependency, e.g. as in a Maven POM
+
+```xml
+<dependency>
+    <groupId>ch.qos.logback</groupId>
+    <artifactId>logback-classic</artifactId>
+    <version>1.2.3</version>
+    <scope>test</scope>
+</dependency>
+```
